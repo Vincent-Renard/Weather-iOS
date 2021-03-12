@@ -13,7 +13,7 @@
 		FC3B150F25FA052600AD1305 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3B150D25FA052600AD1305 /* Main.storyboard */; };
 		FC3B151125FA052A00AD1305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC3B151025FA052A00AD1305 /* Assets.xcassets */; };
 		FC3B151425FA052A00AD1305 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3B151225FA052A00AD1305 /* LaunchScreen.storyboard */; };
-		FC3B151D25FA0F1A00AD1305 /* Donnee.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3B151C25FA0F1A00AD1305 /* Donnee.swift */; };
+		FC3B151D25FA0F1A00AD1305 /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3B151C25FA0F1A00AD1305 /* Payload.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		FC3B151025FA052A00AD1305 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC3B151325FA052A00AD1305 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC3B151525FA052A00AD1305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC3B151C25FA0F1A00AD1305 /* Donnee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Donnee.swift; sourceTree = "<group>"; };
+		FC3B151C25FA0F1A00AD1305 /* Payload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payload.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 				FC3B150725FA052600AD1305 /* AppDelegate.swift */,
 				FC3B150925FA052600AD1305 /* SceneDelegate.swift */,
 				FC3B150B25FA052600AD1305 /* ViewController.swift */,
-				FC3B151C25FA0F1A00AD1305 /* Donnee.swift */,
+				FC3B151C25FA0F1A00AD1305 /* Payload.swift */,
 				FC3B150D25FA052600AD1305 /* Main.storyboard */,
 				FC3B151025FA052A00AD1305 /* Assets.xcassets */,
 				FC3B151225FA052A00AD1305 /* LaunchScreen.storyboard */,
@@ -140,7 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC3B151D25FA0F1A00AD1305 /* Donnee.swift in Sources */,
+				FC3B151D25FA0F1A00AD1305 /* Payload.swift in Sources */,
 				FC3B150C25FA052600AD1305 /* ViewController.swift in Sources */,
 				FC3B150825FA052600AD1305 /* AppDelegate.swift in Sources */,
 				FC3B150A25FA052600AD1305 /* SceneDelegate.swift in Sources */,
@@ -291,6 +291,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6P6Z8L5TFT;
 				INFOPLIST_FILE = API/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -310,6 +311,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6P6Z8L5TFT;
 				INFOPLIST_FILE = API/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (

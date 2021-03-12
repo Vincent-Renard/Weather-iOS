@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="6yV-4h-sK2">
-                                <rect key="frame" x="198.5" y="244" width="195.5" height="119.5"/>
+                                <rect key="frame" x="198.5" y="234" width="195.5" height="119.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OaL-0k-33B">
                                         <rect key="frame" x="0.0" y="0.0" width="117.5" height="119.5"/>
@@ -40,23 +40,65 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ville" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7PT-2s-8gO">
-                                <rect key="frame" x="20" y="373.5" width="374" height="36"/>
+                                <rect key="frame" x="339.5" y="363.5" width="54.5" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xuj-g4-cGO">
+                                <rect key="frame" x="121" y="128" width="175" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="IsL-qF-qDa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="cityNameInput:" destination="BYZ-38-t0r" eventType="valueChanged" id="r55-hT-SqC"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkO-fb-xGS">
+                                <rect key="frame" x="304" y="130" width="44" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="Cuw-Ao-uze"/>
+                                </constraints>
+                                <state key="normal" title="Go"/>
+                                <connections>
+                                    <action selector="searchButton:" destination="BYZ-38-t0r" eventType="touchDown" id="6ys-P9-qNl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEX-f8-8si">
+                                <rect key="frame" x="193" y="176.5" width="31" height="20.5"/>
+                                <state key="normal" backgroundImage="mappin.and.ellipse" catalog="system"/>
+                                <connections>
+                                    <action selector="weatherOnCurrentLoc:" destination="BYZ-38-t0r" eventType="touchDown" id="tr0-TR-ezr"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PY9-i3-QSe">
+                                <rect key="frame" x="41" y="235" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="7PT-2s-8gO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9hd-9B-jL2"/>
-                            <constraint firstItem="7PT-2s-8gO" firstAttribute="top" secondItem="6yV-4h-sK2" secondAttribute="bottom" constant="10" id="Meb-sh-cbP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7PT-2s-8gO" secondAttribute="trailing" constant="20" id="bNc-Xo-j1O"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6yV-4h-sK2" secondAttribute="trailing" constant="20" id="sEa-o0-Vs4"/>
-                            <constraint firstItem="6yV-4h-sK2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="v1e-lg-o3E"/>
+                            <constraint firstItem="Xuj-g4-cGO" firstAttribute="centerX" secondItem="jEX-f8-8si" secondAttribute="centerX" id="0tj-pB-GNS"/>
+                            <constraint firstItem="Xuj-g4-cGO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="121" id="3Gu-tW-Mp4"/>
+                            <constraint firstItem="jEX-f8-8si" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="177" id="86h-k6-xn1"/>
+                            <constraint firstItem="dkO-fb-xGS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Xuj-g4-cGO" secondAttribute="trailing" symbolic="YES" id="8tY-VR-obC"/>
+                            <constraint firstItem="7PT-2s-8gO" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="BR4-5y-5OJ"/>
+                            <constraint firstItem="7PT-2s-8gO" firstAttribute="trailing" secondItem="6yV-4h-sK2" secondAttribute="trailing" id="LZD-dS-kgy"/>
+                            <constraint firstItem="6yV-4h-sK2" firstAttribute="top" secondItem="jEX-f8-8si" secondAttribute="bottom" constant="37" id="TIw-c0-28O"/>
+                            <constraint firstItem="7PT-2s-8gO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="dlN-7d-QRy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dkO-fb-xGS" secondAttribute="trailing" constant="66" id="htU-BX-1el"/>
+                            <constraint firstItem="Xuj-g4-cGO" firstAttribute="centerY" secondItem="dkO-fb-xGS" secondAttribute="centerY" id="jbo-UW-Grl"/>
+                            <constraint firstItem="jEX-f8-8si" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="193" id="nmt-FF-cwT"/>
+                            <constraint firstItem="7PT-2s-8gO" firstAttribute="top" secondItem="6yV-4h-sK2" secondAttribute="bottom" constant="10" id="o8v-l3-F6m"/>
+                            <constraint firstItem="Xuj-g4-cGO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="84" id="wfP-ao-MBL"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="cityInput" destination="Xuj-g4-cGO" id="UJf-Cy-ZFw"/>
+                        <outlet property="skyView" destination="PY9-i3-QSe" id="i1g-Ce-Rf3"/>
                         <outlet property="tempLabel" destination="OaL-0k-33B" id="qH3-JA-zLm"/>
                         <outlet property="villeLabel" destination="7PT-2s-8gO" id="og3-lk-eNS"/>
                     </connections>
@@ -67,6 +109,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

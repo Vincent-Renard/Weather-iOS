@@ -11,7 +11,17 @@ struct Main : Decodable {
     var temp : Double
 }
 
-struct Donnee : Decodable {
+struct Payload : Decodable {
     var name : String
     var main : Main
+    var weather:[Weather]
+    
 }
+struct Weather : Decodable {
+    var id : Int
+    var main : String
+    var description : String
+    var icon : String
+    
+}
+
